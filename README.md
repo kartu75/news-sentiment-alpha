@@ -34,7 +34,7 @@ ComplementNB was chosen over MultinomialNB due to better recall on the minority 
 
 ---
 
-### 2.## Data
+### 2. Data
 
 - **Training data**: `all-data.csv` from [Sentiment Analysis for Financial News](https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news) on Kaggle — download and place in project root
 - **JPM headlines**: `raw_partner_headlines.csv` from the [Massive Stock News Analysis DB](https://www.kaggle.com/datasets/miguelaenlle/massive-stock-news-analysis-db-for-nlpbacktests) on Kaggle — not included in repo due to size, download separately and place in project root
