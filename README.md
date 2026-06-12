@@ -34,11 +34,15 @@ ComplementNB was chosen over MultinomialNB due to better recall on the minority 
 
 ---
 
-### 2. Data
-- **News data**: 2,873 JPM headlines from `raw_partner_headlines.csv` (Oct 2018 — Jun 2020)
-- **Price data**: JPM OHLCV pulled via yfinance for the same period
-- **Merged**: 401 trading days with both price and sentiment data
-- **Note**: Dataset availability was limited to this period. This window unfortunately coincides with the COVID crash, introducing regime bias. A longer dataset spanning multiple market cycles would give more statistically robust results.
+### 2.## Data
+
+- **Training data**: `all-data.csv` from [Sentiment Analysis for Financial News](https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news) on Kaggle — download and place in project root
+- **JPM headlines**: `raw_partner_headlines.csv` from the [Massive Stock News Analysis DB](https://www.kaggle.com/datasets/miguelaenlle/massive-stock-news-analysis-db-for-nlpbacktests) on Kaggle — not included in repo due to size, download separately and place in project root
+- **Price data**: JPM OHLCV pulled via yfinance for the same period — no download needed, fetched programmatically
+
+**Dataset summary**: 2,873 JPM headlines covering Oct 2018 — Jun 2020, merged with daily OHLCV data to produce 401 trading days with both price and sentiment coverage.
+
+> **Note**: Dataset availability was limited to this period. This window unfortunately coincides with the COVID crash, introducing regime bias. A longer dataset spanning multiple market cycles would give more statistically robust results.
 
 ---
 
